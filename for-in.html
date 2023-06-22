@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>for-in</title>
+</head>
+<body>
+    <script>
+        // let intArray = [1, 3, 5];
+        let intArray = new Array(1, 3, 5);
+        for (var i in intArray) {
+            console.log(intArray[i]);
+        }
+
+        let names = ["Tuấn", "Đạt", "Lộc", "Đức", "Kỳ"];
+        for (let i = 0; i < names.length; i++) {
+            console.log(names[i]);
+        }
+
+        //compare for with for-in
+        let intArray2 = new Array(1, 3, 5);
+        for (let i = 0; i < intArray2.length; i++) {
+            console.log(intArray2[i]);
+        }
+
+        let n = intArray2.length - 1;
+        for (let i = n; i >= 0; i--) {
+            console.log(intArray2[i]);
+        }
+    </script>
+</body>
+</html>

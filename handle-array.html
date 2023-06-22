@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>handle array</title>
+</head>
+<body>
+    <script>
+        let intArray = [1, 3, 5];
+        console.log("Before adding at first: " + intArray);
+        intArray.unshift(0);//insert at first of array
+        console.log("After adding at first: " + intArray);
+        intArray.push(9);//insert at last of array
+        console.log("After adding at last: " + intArray);
+        intArray.pop();//remove at last of array
+        console.log("After removing at last: " + intArray);
+        intArray.shift();//remove at first of array
+        console.log("After removing at first: " + intArray);
+
+        //join
+        console.log("Before joining: ");
+        console.log(intArray);//[1, 3, 5]
+        let newIntArray = intArray.join();
+        console.log("After joining 1: ");
+        console.log(newIntArray);//"1,3,5"
+        let newIntArray2 = intArray.join(" ");
+        console.log("After joining 2: ");
+        console.log(newIntArray2);//"1 3 5"
+        let newIntArray3 = intArray.join("");
+        console.log("After joining 3: ");
+        console.log(newIntArray3);//"135"
+        let newIntArray4 = intArray.join("-");
+        console.log("After joining 4: ");
+        console.log(newIntArray4);//"1-3-5"
+        let newIntArray5 = intArray.join("&");
+        console.log("After joining 5: ");
+        console.log(newIntArray5);//"1&3&5"
+
+        //reverse
+        console.log("Before reversing: ");
+        console.log(intArray);//[1, 3, 5]
+        intArray.reverse();
+        console.log("After reversing: ");
+        console.log(intArray);//[5, 3, 1]
+    </script>
+</body>
+</html>
